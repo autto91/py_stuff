@@ -1,0 +1,15 @@
+- Possibly put parser boilerplate in own function
+  and allow for parsing a config file vs
+  input arguments
+
+-  Need to figure out setup for pip version
+   of ansible to be OS agnostic
+
+- (RHEV) fix base template to prevent adding wrong
+  network interface
+
+- Need better implementation for running playbook.
+  check ansible api for possible solution
+
+- need better fix than time.sleep() for waiting for
+  server reboot

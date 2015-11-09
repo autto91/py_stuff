@@ -32,8 +32,8 @@ class Deploy:
                                     auto eth1\n
                                     iface eth1 inet static\n
                                     address %s\n netmask 255.255.0.0\n
-                                    gateway 10.10.0.1\n
-                                    dns-nameservers 10.10.0.31\"''' % self.static_ip
+                                    gateway 10.0.0.1\n
+                                    dns-nameservers 10.0.0.1\"''' % self.static_ip
 
     def set_env(self):
         json_params = '_params.json'

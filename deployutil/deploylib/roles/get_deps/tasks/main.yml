@@ -1,0 +1,13 @@
+- name: install needed Packages
+  apt: name={{ item }} state=latest
+  with_items:
+      - git
+      - apache2
+      - php5
+      - php5-sqlite
+      - php5-mysql
+      - php-pear
+      - php-apc
+      - php5-curl
+  tags:
+      - debug

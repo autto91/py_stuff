@@ -1,0 +1,9 @@
+- name: Update Nodes
+  hosts: '{{hosts}}'
+  remote_user: '{{ user }}'
+  sudo: yes
+
+  roles:
+      - sys_update
+      - get_code
+      - restart_services

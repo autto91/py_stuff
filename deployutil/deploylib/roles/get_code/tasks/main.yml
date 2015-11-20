@@ -1,0 +1,1 @@
+- git: repo=https://url_of_repo.git dest={{ www_dir }} version={{ branch }} force=yes

@@ -1,0 +1,6 @@
+- name: Testing Playbook
+  hosts: '{{ hosts }}'
+
+  tasks:
+      - name: Test task
+        command: uname -a

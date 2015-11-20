@@ -1,0 +1,12 @@
+- name: Deploy new Node
+  hosts: '{{hosts}}'
+  remote_user: '{{ user }}'
+  sudo: yes
+
+  roles:
+      - sys_update
+      - get_deps
+      - get_code
+      - get_vhost
+      - set_permissions
+      - restart_services

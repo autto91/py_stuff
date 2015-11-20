@@ -1,0 +1,5 @@
+- name: set ownership
+  command: chown -R www-data:www-data {{ www_dir }}
+
+- name: set file permissions
+  command: chmod -R 775 {{ www_dir }}

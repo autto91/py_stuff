@@ -1,0 +1,5 @@
+- name: Copy vhost to new Server
+  copy: src={{ vhost_path }}/{{ vhost }} dest=/etc/apache2/sites-available/{{ vhost }} owner=root group=root mode=0644
+
+- name: Enable Site
+  shell: ln -s /etc/apache2/sites-available/{{ vhost }} /etc/apache2/sites-enabled/{{ vhost }}
